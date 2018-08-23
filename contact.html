@@ -9,65 +9,27 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <section class="container">
-        <div class="row header" >
-            <div class="col-md-3 namebox">
-                <h1 class="name" >Kyle Sisson</h1>
-            </div>
-            <div class="col-md-6"></div>
-            <div class="col-md-3 links">
-                <a href="index.html">About</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </div>   
-        <div class="row contentrow">    
-            <div class="col-md-12 content">
-                <div class="row subheaderrow">
-                    <div class="col-md-12">
-                        <h2 class="subheader">Contact</h2>
-                    </div>
-                </div>
-                <div class="row listlabel">
-                    <div class="col-md-12">
-                        <label for="name">Name</label>
-                    </div>
-                </div>
-                <div class="row listbox">
-                    <div class="col-md-12">
-                            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
-                    </div>
-                </div>
-                <div class="row listlabel">
-                        <div class="col-md-12">
-                            <label for="email">Email</label>
-                        </div>
-                </div>
-                <div class="row listbox">
-                    <div class="col-md-12">
-                            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
-                    </div>
-                </div>
-                <div class="row listlabel">
-                        <div class="col-md-12">
-                                <label for="message">Message</label>
-                        </div>
-                </div>
-                <div class="row listbox">
-                    <div class="col-md-12">
-                            <textarea id="message" name="message" required="required"></textarea>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <input type="submit">
-                    </div>
-                </div>
-
-            </div>
-        </div>
+    <ul class="nav">
+        <h3>Kyle Sisson</h3>
         
-    </section>
+        <li>
+            <a class="navlink" href="index.html">Home</a>
+        </li>
+        <li>
+            <a class="navlink" href="portfolio.html">Portfolio</a>
+        </li>
+        <li>
+            <a class="navlink" href="contact.html">Contact</a>
+        </li>
+        
+    </ul>
+    <h3 class="pageheader">Contact Me</h3>
+    <form id="contactform">
+        <input class="contact-form" placeholder="Name" type="text" id="nameinput">
+        <input class="contact-form" placeholder="Enter email" type="email">
+        <textarea class="contact-form" placeholder="Your Message" id="message" name="message"></textarea>
+        <input id="formsubmit" type="submit">
+    </form>
     <footer>
         
     </footer>
